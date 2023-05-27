@@ -77,3 +77,18 @@ let Person_C =new Person_Class(10,30,20);
 console.log(Person_C.class_Person());
 console.log(Person_C.numbers_class,Person_C.numbers_class1);
 */
+
+// protected modifier
+
+/*
+
+The protected modifier allows properties and methods 
+class to be accessible within same class and within subclasses.
+
+When a class (child class) inherits from another class (parent class)
+it is a subclass of the parent class.
+
+The TypeScript compiler will issue an error if you attempt to access
+the protected properties or methods from anywhere else.
+
+*/

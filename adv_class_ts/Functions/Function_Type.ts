@@ -15,6 +15,7 @@ Once annotating a variable with a function type,
 TypeScript compiler will match the number of parameters with their types and the return type.
 
 */
+
 let type_fun:(x:number,y:number)=>number;
 type_fun = function (x: number, y: number) {
     return x + y;

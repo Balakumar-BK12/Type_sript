@@ -159,3 +159,4 @@ let type_value, type_value1;
 type_value = "bala";
 type_value1 = 1234;
 console.log(typeof (type_value), typeof (type_value1));
+c;

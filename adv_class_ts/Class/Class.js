@@ -1,16 +1,11 @@
+"use strict";
 // class
-
 /*
-JavaScript does not have a concept of class like other programming languages such as Java and C#. 
+JavaScript does not have a concept of class like other programming languages such as Java and C#.
 In ES5, you can use a constructor function and prototype inheritance to create a “class”.
 */
-
 class Person_class {
-    ssn;
-    firstName;
-    lastName;
-
-    constructor(ssn: any, firstName: any, lastName: any) {
+    constructor(ssn, firstName, lastName) {
         this.ssn = ssn;
         this.firstName = firstName;
         this.lastName = lastName;
@@ -19,5 +14,5 @@ class Person_class {
         return `${this.firstName} ${this.lastName}`;
     }
 }
-let person_class = new Person_class('171-28-0926','John','Doe');
+let person_class = new Person_class('171-28-0926', 'John', 'Doe');
 console.log(person_class.getFullName());

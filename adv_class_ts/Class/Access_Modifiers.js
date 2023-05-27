@@ -52,16 +52,50 @@ If you don’t specify any access modifier for properties and methods,
 they will take the public modifier by default
 
 */
+/*
 class Person_Class {
-    constructor(numbers_class, numbers_class1, numbers_class2) {
+    public numbers_class;
+    public numbers_class1;
+    private numbers_class2;
+
+    constructor (numbers_class:number,numbers_class1:number,numbers_class2:number){
         this.numbers_class = numbers_class;
         this.numbers_class1 = numbers_class1;
         this.numbers_class2 = numbers_class2;
     }
-    class_Person() {
-        return this.numbers_class + this.numbers_class1 * this.numbers_class2;
+    public class_Person():Number {
+        return this.numbers_class+this.numbers_class1*this.numbers_class2;
     }
 }
-let Person_C = new Person_Class(10, 30, 20);
+let Person_C =new Person_Class(10,30,20);
 console.log(Person_C.class_Person());
-console.log(Person_C.numbers_class, Person_C.numbers_class1);
+console.log(Person_C.numbers_class,Person_C.numbers_class1);
+*/
+// protected modifier
+/*
+
+The protected modifier allows properties and methods
+class to be accessible within same class and within subclasses.
+
+When a class (child class) inherits from another class (parent class)
+it is a subclass of the parent class.
+
+The TypeScript compiler will issue an error if you attempt to access
+the protected properties or methods from anywhere else.
+
+*/
+class Person_class {
+    constructor(ssn, firstName, lastName) {
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+    getFullName() {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+let class_person = new Person_class("bala", "kumar", " D");
+console.log(class_person.getFullName());

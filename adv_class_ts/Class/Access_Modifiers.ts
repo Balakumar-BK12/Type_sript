@@ -92,3 +92,18 @@ The TypeScript compiler will issue an error if you attempt to access
 the protected properties or methods from anywhere else.
 
 */
+/*
+class Person_class {
+    constructor(protected ssn: string, private firstName: string, private lastName: string) {
+        this.ssn = ssn;
+        this.firstName = firstName;
+        this.lastName = lastName;
+    }
+
+    getFullName(): string {
+        return `${this.firstName} ${this.lastName}`;
+    }
+}
+let class_person = new Person_class("bala","kumar"," D");
+console.log(class_person.getFullName());
+*/

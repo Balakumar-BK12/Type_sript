@@ -1,5 +1,5 @@
+"use strict";
 // Static properties
-
 /*
 Unlike an instance property, a static property is shared among all instances of a class.
 
@@ -23,12 +23,10 @@ let jane = new Employee_clas('Jane', 'Doe', 'Back-end Developer');
 
 console.log(Employee_clas.headcount);
 */
-
 // Static methods
-
 /*
 
-Similar to the static property, a static method is also shared across instances of the class. 
+Similar to the static property, a static method is also shared across instances of the class.
 To declare a static method, you use the static keyword before the method name.
 
 */
@@ -54,4 +52,4 @@ let jane = new Employee_clas('Jane', 'Doe', 'Back-end Developer');
 
 console.log(Employee_clas.getHeadcount()); // 2
 
-*/
+*/ 

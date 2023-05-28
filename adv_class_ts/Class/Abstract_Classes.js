@@ -6,39 +6,40 @@ An abstract class is typically used to define common behaviors for derived class
 Unlike a regular class, an abstract class cannot be instantiated directly.
 
 */
-class Employee_class {
-    constructor(firstName, lastName) {
-        this.firstName = firstName;
-        this.lastName = lastName;
+/*
+abstract class Employee_class {
+    constructor(private firstName: string, private lastName: string) {
     }
-    get fullName() {
+    abstract getSalary(): number
+    get fullName(): string {
         return `${this.firstName} ${this.lastName}`;
     }
-    compensationStatement() {
+    compensationStatement(): string {
         return `${this.fullName} makes ${this.getSalary()} a month.`;
     }
 }
 // let employee = new Employee_class('John','Doe');
+
 class FullTimeEmployee extends Employee_class {
-    constructor(firstName, lastName, salary) {
+    constructor(firstName: string, lastName: string, private salary: number) {
         super(firstName, lastName);
-        this.salary = salary;
     }
-    getSalary() {
+    getSalary(): number {
         return this.salary;
     }
 }
+
 class Contractor extends Employee_class {
-    constructor(firstName, lastName, rate, hours) {
+    constructor(firstName: string, lastName: string, private rate: number, private hours: number) {
         super(firstName, lastName);
-        this.rate = rate;
-        this.hours = hours;
     }
-    getSalary() {
+    getSalary(): number {
         return this.rate * this.hours;
     }
 }
 let john = new FullTimeEmployee('John', 'Doe', 12000);
 let jane = new Contractor('Jane', 'Doe', 100, 160);
+
 console.log(john.compensationStatement());
 console.log(jane.getSalary());
+*/ 

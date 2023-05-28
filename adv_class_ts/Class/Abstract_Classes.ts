@@ -7,6 +7,7 @@ Unlike a regular class, an abstract class cannot be instantiated directly.
 
 */
 
+/*
 abstract class Employee_class {
     constructor(private firstName: string, private lastName: string) {
     }
@@ -42,3 +43,4 @@ let jane = new Contractor('Jane', 'Doe', 100, 160);
 
 console.log(john.compensationStatement());
 console.log(jane.getSalary());
+*/

@@ -52,3 +52,20 @@ function signContract(partner: BusinessPartner_class)  {
     }
     // return message;
 }
+
+// in 
+/*
+The in operator carries a safe check for the existence of a property on an object. 
+You can also use it as a type guard
+*/
+
+function signContract_1(partner: BusinessPartner) : string {
+    let message: string;
+    if ('isCreditAllowed' in partner) {
+        message = partner ? 'Sign a new contract with the customer' : 'Credit issue';
+    } else {
+        // must be Supplier
+        message = partner ? 'Sign a new contract the supplier ' : 'Need to evaluate further';
+    }
+    return message;
+}

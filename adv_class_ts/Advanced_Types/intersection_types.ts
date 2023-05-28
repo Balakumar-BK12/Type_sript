@@ -12,6 +12,8 @@ console.log(type_int);
 
 //interface
 interface BusinessPartner {
+    //isInShortList(): unknown;
+    //isCreditAllowed(): unknown;
     name: string;
     credit: number;
 }
@@ -29,11 +31,13 @@ interface Contact {
 type Employee = Identity & Contact & BusinessPartner & Contact;
 
 
-let e: Employee = {
+let list_emp: Employee = {
     id: 100,
     name: 'John Doe',
     email: 'john.doe@example.com',
     phone: '(408)-897-5684',
-    credit: 1000
+    credit: 1000,
+   // isInShortList():undefined,
+   // isCreditAllowed():undefined
 };
-console.log(e);
+console.log(list_emp);

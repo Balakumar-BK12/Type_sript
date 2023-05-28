@@ -10,6 +10,13 @@ protected
 public
 Note that TypeScript controls the access logically during compilation time, not at runtime.
 
+TypeScript provides three access modifiers
+class properties and methods: private, protected, and public.
+
+The private modifier allows access within the same class.
+The protected modifier allows access within the same class and subclasses.
+The public modifier allows access from any location.
+
 */
 //  private
 /*
@@ -84,18 +91,18 @@ The TypeScript compiler will issue an error if you attempt to access
 the protected properties or methods from anywhere else.
 
 */
+/*
 class Person_class {
-    constructor(ssn, firstName, lastName) {
-        this.ssn = ssn;
-        this.firstName = firstName;
-        this.lastName = lastName;
+    constructor(protected ssn: string, private firstName: string, private lastName: string) {
         this.ssn = ssn;
         this.firstName = firstName;
         this.lastName = lastName;
     }
-    getFullName() {
+
+    getFullName(): string {
         return `${this.firstName} ${this.lastName}`;
     }
 }
-let class_person = new Person_class("bala", "kumar", " D");
+let class_person = new Person_class("bala","kumar"," D");
 console.log(class_person.getFullName());
+*/ 

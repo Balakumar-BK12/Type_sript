@@ -1,5 +1,6 @@
 // class
 
+
 /*
 JavaScript does not have a concept of class like other programming languages such as Java and C#. 
 In ES5, you can use a constructor function and prototype inheritance to create a “class”.

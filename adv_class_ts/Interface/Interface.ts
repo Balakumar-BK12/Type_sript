@@ -1,5 +1,4 @@
 // Interface
-
 function getFullName(person: {
     firstName: string;
     lastName: string
